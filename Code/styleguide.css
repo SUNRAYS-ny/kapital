@@ -1,0 +1,12 @@
+:root {
+  --label-colorslc-l-secondary: rgba(60, 60, 67, 0.6);
+  --system-backgroundssb-l-primary: rgba(255, 255, 255, 1);
+  --large-default-body-font-family: "Roboto", Helvetica;
+  --large-default-body-font-weight: 400;
+  --large-default-body-font-size: 17px;
+  --large-default-body-letter-spacing: 0.5px;
+  --large-default-body-line-height: 22px;
+  --large-default-body-font-style: normal;
+  --material-design-shadows-1: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px
+    0.10000000149011612px 0.30000001192092896px 0px rgba(0, 0, 0, 0.1);
+}

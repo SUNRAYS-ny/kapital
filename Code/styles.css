@@ -1,0 +1,96 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MAIN LAYOUT */
+.app {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(
+    305deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(70, 255, 60, 1) 46%,
+    rgba(10, 162, 2, 1) 100%
+  );
+  overflow: hidden;
+}
+
+/* LEFT COLUMN */
+.brand {
+  width: 120px;
+  min-width: 120px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  width: 560px;
+  position: relative;
+  top:-45px;
+  left: 120px;
+  height: auto;
+}
+
+/* SEARCH BAR */
+.search-bar {
+  width: 350%;
+  position:relative;
+  top:-80px;
+  left:150px;
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 13px 20px;
+  gap: 6px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.search-bar .icon {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+/* BACKGROUND ART */
+.background-art {
+  flex: 1;
+  background-image: url("../Assests/PlantForWeb.png");
+  background-repeat: no-repeat;
+  background-position: right bottom, right center;
+  background-size: contain;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .brand {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .background-art {
+    background-position: center bottom, center center;
+  }
+}
